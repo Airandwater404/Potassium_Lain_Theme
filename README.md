@@ -34,7 +34,7 @@ Both versions also show the wallpaper, blurred and dimmed, while Potassium is lo
 
 <picture>
   <source srcset="preview-loading.avif" type="image/avif">
-  <img src="screenshot-loading.jpg" alt="Lain theme loading screen" width="400">
+  <img src="screenshot-loading.jpg" alt="Lain theme loading screen">
 </picture>
 
 This comes from the `[class*="backdrop"]` rule: Potassium shows its own picture in a `.backdrop` layer while it starts up, and the theme's `background: … !important` replaces that picture with a see-through dark glass, so the wallpaper behind it shows through.
