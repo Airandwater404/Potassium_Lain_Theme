@@ -3,8 +3,8 @@
 A Serial Experiments Lain–inspired theme for the Potassium executor: square corners, snow and scanline overlays, glassy blue panels, monospace labels, カリウム in the title bar and a "WIRED LINK ESTABLISHED" status strip, with an animated wallpaper behind the whole app.
 
 <picture>
-  <source srcset="window.avif" type="image/avif">
-  <img src="window.jpg" alt="Lain theme">
+  <source srcset="screens.avif" type="image/avif">
+  <img src="screens.jpg" alt="Lain theme">
 </picture>
 
 The preview is animated (AVIF). Browsers that can't play AVIF show a still screenshot instead.
@@ -22,8 +22,8 @@ This version adds a few tweaks on top:
 Prefer it exactly as Misanthropy made it? [`Original.css`](Original.css) is the untouched original. Install it the same way as `Theme.css` below.
 
 <picture>
-  <source srcset="window-original.avif" type="image/avif">
-  <img src="window-original.jpg" alt="Original Lain theme">
+  <source srcset="screens-original.avif" type="image/avif">
+  <img src="screens-original.jpg" alt="Original Lain theme">
 </picture>
 
 In the original, the wallpaper shows behind the explorer while the editor and start page stay solid.
@@ -33,8 +33,8 @@ In the original, the wallpaper shows behind the explorer while the editor and st
 Both versions also show the wallpaper, blurred and dimmed, while Potassium is loading or on the login screen.
 
 <picture>
-  <source srcset="loading.avif" type="image/avif">
-  <img src="loading.jpg" alt="Lain theme loading screen">
+  <source srcset="loading-screen.avif" type="image/avif">
+  <img src="loading-screen.jpg" alt="Lain theme loading screen">
 </picture>
 
 This comes from the `[class*="backdrop"]` rule: Potassium shows its own picture in a `.backdrop` layer while it starts up, and the theme's `background: … !important` replaces that picture with a see-through dark glass, so the wallpaper behind it shows through.
