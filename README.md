@@ -19,6 +19,8 @@ This version adds a few tweaks on top:
 - A light dark tint over the wallpaper keeps text readable on bright frames.
 - The editor's minimap no longer draws a solid dark strip on the right.
 
+Prefer it exactly as Misanthropy made it? [`Original.css`](Original.css) is the untouched original. Install it the same way as `Theme.css` below.
+
 ## Install
 
 1. In Potassium, open **Settings → Appearance → Custom theme**.
