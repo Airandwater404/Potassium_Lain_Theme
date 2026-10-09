@@ -21,6 +21,13 @@ This version adds a few tweaks on top:
 
 Prefer it exactly as Misanthropy made it? [`Original.css`](Original.css) is the untouched original. Install it the same way as `Theme.css` below.
 
+<picture>
+  <source srcset="preview-original.avif" type="image/avif">
+  <img src="screenshot-original.jpg" alt="Original Lain theme">
+</picture>
+
+In the original, the wallpaper shows behind the explorer while the editor and start page stay solid.
+
 ## Install
 
 1. In Potassium, open **Settings → Appearance → Custom theme**.
