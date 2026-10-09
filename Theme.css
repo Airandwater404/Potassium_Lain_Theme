@@ -1,0 +1,495 @@
+:root,
+:root[data-theme] {
+  --radius-sm: 0px !important;
+  --radius-md: 0px !important;
+  --radius-lg: 0px !important;
+  --radius-xl: 0px !important;
+  --radius-full: 0px !important;
+
+  --cat-blue: #5b7fd6;
+  --cat-sky-blue: #8ecae6;
+  --cat-glow: rgba(91, 127, 214, 0.35);
+  --glass-border: 1px solid rgba(142, 202, 230, 0.28);
+  --glass-border-subtle: 1px solid rgba(142, 202, 230, 0.15);
+  --glass-bg: rgba(6, 11, 20, 0.18);
+  --glass-bg-hover: rgba(91, 127, 214, 0.16);
+  --glass-bg-active: rgba(91, 127, 214, 0.24);
+}
+
+*,
+*::before,
+*::after,
+[class*="pill"],
+[class*="badge"],
+[class*="chip"],
+[class*="tag"] {
+  border-radius: 0px !important;
+}
+
+body::before {
+  content: "" !important;
+  position: fixed !important;
+  inset: 0 !important;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.55), rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 80px 120px, rgba(180, 210, 240, 0.45), rgba(0, 0, 0, 0)),
+    radial-gradient(1.5px 1.5px at 150px 60px, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0)),
+    radial-gradient(3px 3px at 220px 240px, rgba(200, 225, 250, 0.5), rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 310px 180px, rgba(255, 255, 255, 0.45), rgba(0, 0, 0, 0)),
+    radial-gradient(2.5px 2.5px at 380px 320px, rgba(180, 210, 240, 0.5), rgba(0, 0, 0, 0)),
+    radial-gradient(1.5px 1.5px at 450px 90px, rgba(255, 255, 255, 0.45), rgba(0, 0, 0, 0)),
+    radial-gradient(3px 3px at 520px 290px, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0));
+  background-size: 550px 550px !important;
+  animation: snowDrift 14s linear infinite !important;
+  pointer-events: none !important;
+  z-index: 9998 !important;
+  opacity: 0.55 !important;
+}
+
+body::after {
+  content: "" !important;
+  position: fixed !important;
+  inset: 0 !important;
+  background: linear-gradient(
+    rgba(10, 12, 18, 0) 50%,
+    rgba(0, 0, 0, 0.28) 50%
+  ) !important;
+  background-size: 100% 4px !important;
+  pointer-events: none !important;
+  z-index: 9999 !important;
+  opacity: 0.22 !important;
+}
+
+@keyframes snowDrift {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(8px);
+  }
+  100% {
+    background-position: 120px 550px, 80px 550px, 150px 550px, 100px 550px;
+    transform: translateX(0px);
+  }
+}
+
+[class*="start"] h1,
+[class*="home"] h1,
+.start h1 {
+  font-size: 0px !important;
+  line-height: 0 !important;
+}
+
+[class*="start"] h1::after,
+[class*="home"] h1::after,
+.start h1::after {
+  content: "カリウム" !important;
+  font-size: 32px !important;
+  line-height: normal !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+  color: #ffffff !important;
+  text-shadow: 0 0 15px var(--cat-glow) !important;
+}
+
+header > span:not([class*="control"]):not(:last-child),
+header > div[class*="title"]:not([class*="controls"]),
+[class*="titlebar"] > span:not([class*="control"]):not(:last-child),
+[class*="titlebar"] > div[class*="title"]:not([class*="controls"]),
+[class*="titlebar-center"] {
+  font-size: 0px !important;
+  line-height: 0 !important;
+}
+
+header > span:not([class*="control"]):not(:last-child)::after,
+header > div[class*="title"]:not([class*="controls"])::after,
+[class*="titlebar"] > span:not([class*="control"]):not(:last-child)::after,
+[class*="titlebar"] > div[class*="title"]:not([class*="controls"])::after,
+[class*="titlebar-center"]::after {
+  content: "カリウム" !important;
+  font-size: 11px !important;
+  line-height: normal !important;
+  color: #c9d1d9 !important;
+  font-weight: 600 !important;
+  letter-spacing: 1.5px !important;
+  font-family: monospace !important;
+}
+
+[class*="window-controls"],
+[class*="window-controls"] *,
+[class*="controls"],
+[class*="controls"] *,
+button,
+[role="button"],
+.sidebar [class*="title"],
+[class*="explorer"] [class*="title"] {
+  font-size: initial !important;
+}
+
+[class*="window-controls"] *::after,
+[class*="controls"] *::after,
+button::after,
+[role="button"]::after,
+.sidebar [class*="title"]::after,
+[class*="explorer"] [class*="title"]::after {
+  content: normal !important;
+}
+
+html,
+body,
+#root,
+.app,
+.workspace,
+#app,
+[class*="layout"],
+[class*="container"] {
+  background-color: transparent !important;
+}
+
+body {
+  background-image: url('https://i.imgur.com/9qscfn4.gif') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+.workspace::after,
+[class*="main-container"]::after {
+  content: "WIRED LINK ESTABLISHED // LAYER_07 // NODE: 0x7F" !important;
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  padding: 3px 12px !important;
+  font-family: monospace !important;
+  font-size: 9px !important;
+  letter-spacing: 2px !important;
+  color: #8ecae6 !important;
+  background: rgba(6, 11, 20, 0.45) !important;
+  border-top: var(--glass-border) !important;
+  z-index: 999 !important;
+  pointer-events: none !important;
+}
+
+[class*="backdrop"],
+[class*="modal-backdrop"],
+[class*="dimmer"],
+[class*="overlay-container"]:has([role="dialog"]),
+dialog::backdrop {
+  background: rgba(6, 11, 20, 0.55) !important;
+  backdrop-filter: blur(8px) brightness(0.75) !important;
+  -webkit-backdrop-filter: blur(8px) brightness(0.75) !important;
+}
+
+body:has([role="dialog"]:not([aria-hidden="true"])),
+body:has([class*="modal"]:not([aria-hidden="true"]):not([style*="display: none"])),
+body:has([class*="popup"]:not([aria-hidden="true"]):not([style*="display: none"])),
+body:has([class*="settings-tab"]:not([style*="display: none"])),
+body:has(dialog[open]) {
+  & .workspace,
+  & .editor,
+  & .editor-container,
+  & .monaco-workbench,
+  & .sidebar,
+  & aside,
+  & [class*="sidebar"],
+  & [class*="explorer"],
+  & .console,
+  & .terminal,
+  & [class*="main-container"] {
+    filter: blur(8px) brightness(0.7) !important;
+    pointer-events: none !important;
+    transition: filter 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+}
+
+[role="dialog"]::before,
+[class*="modal"]:not([class*="backdrop"])::before {
+  content: "" !important;
+  position: fixed !important;
+  inset: 0 !important;
+  background: rgba(6, 11, 20, 0.45) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  z-index: -1 !important;
+  pointer-events: auto !important;
+}
+
+.editor,
+.editor-container,
+.editor-instance,
+.monaco-workbench,
+.part.editor,
+[class*="editor-group"],
+[class*="editor-container"] {
+  background: var(--glass-bg) !important;
+  border-left: var(--glass-border) !important;
+  border-right: var(--glass-border) !important;
+  border-bottom: var(--glass-border) !important;
+  border-radius: 0px !important;
+}
+
+[class*="breadcrumbs"],
+[class*="breadcrumb-item"],
+.monaco-breadcrumbs {
+  background: rgba(6, 11, 20, 0.3) !important;
+  border-bottom: var(--glass-border) !important;
+  color: #8faec9 !important;
+}
+
+.editor::before,
+[class*="editor-group"]::before {
+  content: "┌" !important;
+  position: absolute !important;
+  top: 4px !important;
+  left: 6px !important;
+  font-family: monospace !important;
+  font-size: 16px !important;
+  color: var(--cat-sky-blue) !important;
+  z-index: 10 !important;
+  pointer-events: none !important;
+  opacity: 0.65 !important;
+}
+
+.monaco-editor,
+.monaco-editor-background,
+.monaco-editor .inputarea.ime-input,
+.monaco-editor .lines-content,
+.monaco-editor .view-lines,
+.monaco-editor .overflow-guard,
+.monaco-editor .monaco-scrollable-element {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+.monaco-editor .margin,
+.monaco-editor .margin-view-overlays {
+  background: rgba(6, 11, 20, 0.25) !important;
+  border-right: var(--glass-border) !important;
+}
+
+.monaco-editor .view-line {
+  background: transparent !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95), 0 0 2px rgba(0, 0, 0, 0.95) !important;
+}
+
+.monaco-editor .view-line span,
+.monaco-editor .lines-content span,
+.monaco-editor .decorationsOverviewRuler,
+.monaco-editor [class*="ced-TextEditorDecoration"],
+.monaco-editor [class*="wordHighlight"],
+.monaco-editor [class*="selectionHighlight"] {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.monaco-editor .line-numbers {
+  color: #7ab2d3 !important;
+  background: transparent !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95) !important;
+}
+
+.monaco-editor .current-line {
+  background: rgba(91, 127, 214, 0.08) !important;
+  border-top: 1px solid rgba(142, 202, 230, 0.2) !important;
+  border-bottom: 1px solid rgba(142, 202, 230, 0.2) !important;
+  border-left: 2px solid var(--cat-sky-blue) !important;
+  box-shadow: none !important;
+}
+
+.monaco-editor .selected-text {
+  background: rgba(91, 127, 214, 0.3) !important;
+  outline: 1px solid rgba(142, 202, 230, 0.35) !important;
+}
+
+.sidebar,
+aside,
+[class*="sidebar"],
+[class*="explorer"] {
+  background: var(--glass-bg) !important;
+  border-right: var(--glass-border) !important;
+  border-left: var(--glass-border-subtle) !important;
+  box-shadow: inset -1px 0 0 rgba(142, 202, 230, 0.08) !important;
+}
+
+[role="treeitem"] {
+  padding: 5px 8px !important;
+  margin: 1px 4px !important;
+  color: #c5d7ed !important;
+  font-family: monospace !important;
+  border: 1px solid transparent !important;
+  transition: all 0.15s ease !important;
+}
+
+[role="treeitem"]:hover {
+  background: var(--glass-bg-hover) !important;
+  border: var(--glass-border-subtle) !important;
+  border-left: 2px solid var(--cat-sky-blue) !important;
+  color: #ffffff !important;
+  transform: translateX(2px) !important;
+}
+
+[role="treeitem"][aria-selected="true"] {
+  background: var(--glass-bg-active) !important;
+  border: var(--glass-border) !important;
+  border-left: 2px solid var(--cat-sky-blue) !important;
+  color: #ffffff !important;
+}
+
+[role="tab"] {
+  background: rgba(6, 11, 20, 0.25) !important;
+  border: none !important;
+  border-right: var(--glass-border-subtle) !important;
+  border-bottom: var(--glass-border) !important;
+  color: #9bb5d4 !important;
+  font-family: monospace !important;
+  font-size: 11px !important;
+  transition: all 0.15s ease !important;
+}
+
+[role="tab"]:hover {
+  background: var(--glass-bg-hover) !important;
+  color: #ffffff !important;
+}
+
+[role="tab"][aria-selected="true"] {
+  background: var(--glass-bg-active) !important;
+  border-top: 2px solid var(--cat-sky-blue) !important;
+  border-bottom: none !important;
+  color: #ffffff !important;
+}
+
+button,
+.btn,
+[role="button"]:not([role="switch"]):not([class*="switch"]):not([class*="toggle"]):not([class*="tab"]),
+[class*="button"]:not([class*="switch"]):not([class*="toggle"]):not([class*="tab"]),
+[class*="run"],
+[class*="attach"] {
+  background: rgba(6, 11, 20, 0.3) !important;
+  color: #e0f2fe !important;
+  border: var(--glass-border) !important;
+  font-family: monospace !important;
+  font-size: 11px !important;
+  letter-spacing: 1px !important;
+  transition: all 0.15s ease !important;
+}
+
+button:hover,
+.btn:hover,
+[role="button"]:not([role="switch"]):not([class*="switch"]):not([class*="toggle"]):not([class*="tab"]):hover,
+[class*="button"]:not([class*="switch"]):not([class*="toggle"]):not([class*="tab"]):hover,
+[class*="run"]:hover,
+[class*="attach"]:hover {
+  background: rgba(91, 127, 214, 0.32) !important;
+  border-color: var(--cat-sky-blue) !important;
+  box-shadow: 0 0 10px var(--cat-glow) !important;
+  color: #ffffff !important;
+}
+
+[class*="attach"]::before {
+  content: none !important;
+  display: none !important;
+}
+
+.console,
+.terminal,
+[class*="console"],
+[class*="terminal"],
+[class*="bottom-panel"],
+[class*="output"],
+.xterm,
+.xterm-viewport,
+.xterm-screen {
+  background: var(--glass-bg) !important;
+  border-top: var(--glass-border) !important;
+  border-left: var(--glass-border) !important;
+  border-right: var(--glass-border) !important;
+}
+
+[class*="console"] input,
+[class*="terminal"] input,
+[class*="console"] [class*="header"],
+[class*="bottom-panel"] [class*="header"] {
+  background: rgba(6, 11, 20, 0.35) !important;
+  border-bottom: var(--glass-border) !important;
+}
+
+.xterm-rows,
+.xterm-rows > div,
+.xterm-rows span {
+  background: transparent !important;
+  background-color: transparent !important;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: geometricPrecision !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.95) !important;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+textarea,
+select {
+  color: #e0f2fe !important;
+  border: var(--glass-border) !important;
+  background: rgba(6, 11, 20, 0.3) !important;
+  font-family: monospace !important;
+  transition: all 0.15s ease !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--cat-sky-blue) !important;
+  box-shadow: 0 0 8px var(--cat-glow) !important;
+}
+
+* {
+  scrollbar-width: thin !important;
+  scrollbar-color: var(--cat-blue) transparent !important;
+}
+
+*::-webkit-scrollbar {
+  width: 4px !important;
+  height: 4px !important;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(91, 127, 214, 0.45) !important;
+  border: 1px solid rgba(142, 202, 230, 0.3) !important;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--cat-sky-blue) !important;
+}
+
+/* See-through panels so the background shows behind the whole app, not just the explorer. */
+:root[data-theme] {
+  --bg-app: rgba(6, 11, 20, 0.20);
+  --bg-chrome: rgba(6, 11, 20, 0.45);
+  --bg-sidebar: rgba(6, 11, 20, 0.35);
+  --bg-editor: rgba(6, 11, 20, 0.45);
+  --bg-panel: rgba(6, 11, 20, 0.50);
+  --bg-status: rgba(6, 11, 20, 0.60);
+  --bg-elevated: rgba(10, 16, 28, 0.92);
+  --bg-input: rgba(6, 11, 20, 0.40);
+}
+
+/* Dim the background a little so text stays readable over it. */
+body {
+  background-image: linear-gradient(rgba(6, 11, 20, 0.35), rgba(6, 11, 20, 0.35)), url('https://i.imgur.com/9qscfn4.gif') !important;
+}
+
+/* The minimap paints its own solid background on a canvas; screen blending drops the dark parts. */
+.monaco-editor .minimap,
+.monaco-editor .minimap canvas {
+  mix-blend-mode: screen !important;
+  background: transparent !important;
+}
+
+.monaco-editor .minimap { opacity: 0.6 !important; }
+.monaco-editor .minimap-shadow-visible { box-shadow: none !important; }
