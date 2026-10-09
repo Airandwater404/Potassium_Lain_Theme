@@ -28,6 +28,17 @@ Prefer it exactly as Misanthropy made it? [`Original.css`](Original.css) is the 
 
 In the original, the wallpaper shows behind the explorer while the editor and start page stay solid.
 
+## Loading screen
+
+Both versions also show the wallpaper, blurred and dimmed, while Potassium is loading or on the login screen.
+
+<picture>
+  <source srcset="preview-loading.avif" type="image/avif">
+  <img src="screenshot-loading.jpg" alt="Lain theme loading screen" width="400">
+</picture>
+
+This comes from the `[class*="backdrop"]` rule: Potassium shows its own picture in a `.backdrop` layer while it starts up, and the theme's `background: … !important` replaces that picture with a see-through dark glass, so the wallpaper behind it shows through.
+
 ## Install
 
 1. In Potassium, open **Settings → Appearance → Custom theme**.
