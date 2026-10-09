@@ -2,9 +2,16 @@
 
 A Serial Experiments Lain–inspired theme for the Potassium executor: square corners, snow and scanline overlays, glassy blue panels, monospace labels, カリウム in the title bar and a "WIRED LINK ESTABLISHED" status strip, with an animated wallpaper behind the whole app.
 
+<picture>
+  <source srcset="preview.avif" type="image/avif">
+  <img src="screenshot.jpg" alt="Lain theme">
+</picture>
+
+The preview is animated (AVIF). Browsers that can't play AVIF show a still screenshot instead.
+
 ## Credit
 
-The original theme was made by **Misanthropy (xzyp)**: [Discord](https://discord.com/users/578664539500052490) · [guns.lol/xzyp](https://guns.lol/xzyp).
+The original theme was made by **Misanthropy (xzyp)**: [Discord](https://discord.com/users/578664539500052490) (user ID `578664539500052490`) · [guns.lol/xzyp](https://guns.lol/xzyp).
 
 This version adds a few tweaks on top:
 
